@@ -15,4 +15,11 @@ describe Kudomon do
     kudomon = described_class.new(:type => 'water')
     expect(kudomon.captured?).to eq false
   end
+
+  it 'can #receive_damage' do
+    kudomon1 = described_class.new(:type => 'water')
+    kudomon2 = described_class.new(:type => 'water')
+    kudomon1.receive_damage(kudomon2)
+    expect(kudomon1.health).to eq 2
+  end
 end

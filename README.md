@@ -43,7 +43,7 @@ At the exact same time, my neighbour Freddy sees the same Kudomon and also tries
 Freddy succeeds and adds the Kudomon to his collection before I’ve finished catching it.
 I now feel sad.
 
-How can we avoid this situation? 
+How can we avoid this situation?
 
 Now imagine instead of just two people, it’s now 1000 people cramming into Central Park to catch the same Kudomon - would the same solution work then?
 
@@ -65,3 +65,11 @@ Water > Fire > Grass > Rock > Electric > Water
 (Psychic is good against everything except other psychics.)
 
 Amend your code to take this dynamic into account.
+
+# SOLUTION
+Vanilla Ruby tested with RSPEC
+I have no knowledge of Pokemons game whatsoever, so tried my best using above description to code the game.
+
+What would I change/add - Pokemons genearation, removing defaults method, to bulky not very reusable. Would ad some UI at least CLI, Rails for that challenge seemed bit easier.
+
+If something is unclear, just give me a shout. Hope to hear soon from you. Best! 

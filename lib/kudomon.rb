@@ -1,5 +1,5 @@
 class Kudomon
-attr_reader :species, :position
+attr_reader :type, :species, :position, :health, :combat
 
   def initialize(args = {})
     @kudomons_hash = args[:kudomons_hash] ||= default_types
@@ -13,7 +13,7 @@ attr_reader :species, :position
   end
 
   def default_types
-    {'grass' => {:species => 'Sourbulb', :health => 2, :combat => 3}, 'fire' => {:species => 'Mancharred', :health => 2, :combat => 3}, 'electric' => {:species => 'Chikapu', :health => 2, :combat => 3}, 'water' => {:species => 'Blastoise', :health => 2, :combat => 3}, 'rock' => {:species => 'Aerodactyl', :health => 2, :combat => 3}, 'psychic' => {:species => 'Mew', :health => 2, :combat => 3}}
+    {'grass' => {:species => 'Sourbulb', :health => 9, :combat => 3}, 'fire' => {:species => 'Mancharred', :health => 9, :combat => 3}, 'electric' => {:species => 'Chikapu', :health => 6, :combat => 2}, 'water' => {:species => 'Blastoise', :health => 3, :combat => 1}, 'rock' => {:species => 'Aerodactyl', :health => 12, :combat => 4}, 'psychic' => {:species => 'Mew', :health => 6, :combat => 2}}
   end
 
   def positioning
@@ -28,4 +28,11 @@ attr_reader :species, :position
     @captured = true
   end
 
+  def receive_damage attacker
+    @health -= attacker.combat
+  end
+
+  def trounce
+    @health = 0
+  end
 end
