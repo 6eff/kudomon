@@ -70,6 +70,6 @@ Amend your code to take this dynamic into account.
 Vanilla Ruby tested with RSPEC
 I have no knowledge of Pokemons game whatsoever, so tried my best using above description to code the game.
 
-What would I change/add - Pokemons genearation, removing defaults method, to bulky not very reusable. Would ad some UI at least CLI, Rails for that challenge seemed bit easier.
+What would I change/add - Pokemons genearation, removing defaults method, to bulky not very reusable. Would ad some UI at least CLI, Rails for that challenge seemed bit easier. Defo would add a game generator and pokemons factory. Might tidy up tests a bit.
 
 If something is unclear, just give me a shout. Hope to hear soon from you. Best! 
